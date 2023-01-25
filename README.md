@@ -86,10 +86,16 @@ User jane_admin as your admin account from now on
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oisVhjt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Join Client-1 to your domain (mydomain.com)
+From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+From the Azure Portal, restart Client-1
+Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
+Create a new OU named “_CLIENTS” and drag Client-1 into there
+
 </p>
 <br />
 <p>
