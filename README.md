@@ -52,10 +52,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/4ccbsZL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Ensure Connectivity between the client and Domain Controller
-Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
-Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
-Check back at Client-1 to see the ping succeed
+- Ensure Connectivity between the client and Domain Controller
+- Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
+- Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+- Check back at Client-1 to see the ping succeed
 
 </p>
 <br />
@@ -64,10 +64,10 @@ Check back at Client-1 to see the ping succeed
 <img src="https://i.imgur.com/1dfPfRC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Install Active Directory
-Login to DC-1 and install Active Directory Domain Services
-Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
-Restart and then log back into DC-1 as user: mydomain.com\labuser
+- Install Active Directory
+- Login to DC-1 and install Active Directory Domain Services
+- Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+- Restart and then log back into DC-1 as user: mydomain.com\labuser
 
 </p>
 <br />
@@ -75,13 +75,13 @@ Restart and then log back into DC-1 as user: mydomain.com\labuser
 <img src="https://i.imgur.com/KOUUZJ3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create an Admin and Normal User Account in AD
-In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
-Create a new OU named “_ADMINS”
-Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
-Add jane_admin to the “Domain Admins” Security Group
-Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
-User jane_admin as your admin account from now on
+- Create an Admin and Normal User Account in AD
+- In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+- Create a new OU named “_ADMINS”
+- Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
+- Add jane_admin to the “Domain Admins” Security Group
+- Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
+- User jane_admin as your admin account from now on
 
 </p>
 <br />
@@ -89,12 +89,12 @@ User jane_admin as your admin account from now on
 <img src="https://i.imgur.com/oisVhjt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Join Client-1 to your domain (mydomain.com)
-From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
-From the Azure Portal, restart Client-1
-Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
-Create a new OU named “_CLIENTS” and drag Client-1 into there
+- Join Client-1 to your domain (mydomain.com)
+- From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+- From the Azure Portal, restart Client-1
+- Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+- Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the - - root of the domain
+- Create a new OU named “_CLIENTS” and drag Client-1 into there
 
 </p>
 <br />
@@ -102,12 +102,12 @@ Create a new OU named “_CLIENTS” and drag Client-1 into there
 <img src="https://i.imgur.com/htHZ8Sl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Setup Remote Desktop for non-administrative users on Client-1
-Log into Client-1 as mydomain.com\jane_admin and open system properties
-Click “Remote Desktop”
-Allow “domain users” access to remote desktop
-You can now log into Client-1 as a normal, non-administrative user now
-Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+- Setup Remote Desktop for non-administrative users on Client-1
+- Log into Client-1 as mydomain.com\jane_admin and open system properties
+- Click “Remote Desktop”
+- Allow “domain users” access to remote desktop
+- You can now log into Client-1 as a normal, non-administrative user now
+- Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
 </p>
 <br />
