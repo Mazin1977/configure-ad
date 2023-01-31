@@ -35,7 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/4I3e3Ff.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pjFL1P7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 - Setup Resources in Azure
@@ -49,7 +49,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img src="https://i.imgur.com/4ccbsZL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/l9stloM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 - Ensure Connectivity between the client and Domain Controller
@@ -61,7 +61,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img src="https://i.imgur.com/1dfPfRC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dEbl1w9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 - Install Active Directory
@@ -72,7 +72,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/KOUUZJ3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BatH2cv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 - Create an Admin and Normal User Account in AD
@@ -86,7 +86,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/oisVhjt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/U553ghF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 - Join Client-1 to your domain (mydomain.com)
@@ -99,7 +99,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/htHZ8Sl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RhgjwCK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 - Setup Remote Desktop for non-administrative users on Client-1
